@@ -20,8 +20,21 @@ $(document).ready(function(){
 
       $(".exciting").css("background-color", "red");
 
+      // $("#thebutton").click(function(){
+      // 	$(".exciting").hide();
+      // });
+
       $("#thebutton").click(function(){
-      	$(".exciting").hide();
+      	
+      	var firstname = $("#firsttextbox").val();
+      	alert("hello " + firstname);
+
+      	if(firstname[0] == 'D')
+      	{
+      		alert("hello creator");
+      	}
+
+
       });
 
 
@@ -43,7 +56,7 @@ I made this simply for the benifit of you. It is one hundred percent free and is
 </ul>
 </p>
 <form>
-put you rfirst name:<input name="first"><br>
+put you rfirst name:<input name="first" id="firsttextbox"><br>
 <input type="button" id="thebutton" value="click me">
 </form>
 <div id="justtext">something</div>
