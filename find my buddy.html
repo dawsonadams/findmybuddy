@@ -3,8 +3,22 @@
 <title>cool website bro</title>
 <script type="text/javascript" src="jquery-1.12.3.js"></script>
 
+<style>
+.exciting {
+	background-color:grey;
+}
+
+#justtext {
+	font-weight: bold;
+}
+
+body {
+	background-color:lightgrey;
+}
+</style>
+
 </head>
-<body style="background-color:lightgrey;">
+<body>
 
 <script type="text/javascript">
 $(document).ready(function(){
@@ -18,7 +32,7 @@ $(document).ready(function(){
 	      $("#justtext").css("background-color","yellow");
       });
 
-      $(".exciting").css("background-color", "red");
+      //$(".exciting").css("background-color", "red");
 
       // $("#thebutton").click(function(){
       // 	$(".exciting").hide();
@@ -34,6 +48,22 @@ $(document).ready(function(){
       		alert("hello creator");
       	}
 
+      	var sport = $("#theselect").val();
+
+      	if(sport=="skate")
+      	{
+
+      	}
+
+      	if(sport=="snow")
+      	{
+      		$("#sportimage").attr("src", "img/snowflake.gif");
+      		$("#sportimage").show();
+      		$('body').css('background-image', 'img/snowflake.gif');
+      	}
+
+
+
 
       });
 
@@ -41,6 +71,7 @@ $(document).ready(function(){
     // all above here
     });
 </script>
+
 
 
 <h1 style="font-style: verdana;"style="font-size: 300%"><center>Find My Riding Buddy.com</h1>
@@ -55,13 +86,24 @@ I made this simply for the benifit of you. It is one hundred percent free and is
 <li>4. RIDE!!</li>
 </ul>
 </p>
+<img src="#" id="sportimage" style="display:none">
 <form>
+<select id="theselect">
+  <option value="skate">Skate</option>
+  <option value="snow">Snow</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+</select>
+
 put you rfirst name:<input name="first" id="firsttextbox"><br>
-<input type="button" id="thebutton" value="click me">
-</form>
+
+
 <div id="justtext">something</div>
 <div class="exciting">something old</div>
 not in a div<br>
 <div class="exciting">something new</div>
+
+<input type="button" id="thebutton" value="click me">
+</form>
 </body>
 </html>
