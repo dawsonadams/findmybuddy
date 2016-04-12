@@ -1,9 +1,23 @@
-<!DOCTYPE html>
 <html lang="en-US">
 <head>
 <title>cool website bro</title>
+<script type="text/javascript" src="jquery-1.12.3.js"></script>
+
 </head>
 <body style="background-color:lightgrey;">
+
+<script type="text/javascript">
+$(document).ready(function(){
+      $("#justtext").click(function() {
+      	alert('most stuff on the internet is just copy paste anyways');
+      //   $("p#44.test").css("background-color","yellow");
+      });
+
+
+
+    });
+</script>
+
 
 <h1 style="font-style: verdana;"style="font-size: 300%"><center>Find My Riding Buddy.com</h1>
 
@@ -18,7 +32,9 @@ I made this simply for the benifit of you. It is one hundred percent free and is
 </ul>
 </p>
 <form>
-put you rfirst name:<input name="first">
+put you rfirst name:<input name="first"><br>
+<input type="button" id="thebutton" value="click me">
 </form>
+<div id="justtext">something</div>
 </body>
 </html>
