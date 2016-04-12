@@ -8,13 +8,24 @@
 
 <script type="text/javascript">
 $(document).ready(function(){
+	// all your jquery below here
+
+
+	// id's get a # before the name
+	// classes get a . before the name
+	  
       $("#justtext").click(function() {
-      	alert('most stuff on the internet is just copy paste anyways');
-      //   $("p#44.test").css("background-color","yellow");
+	      $("#justtext").css("background-color","yellow");
+      });
+
+      $(".exciting").css("background-color", "red");
+
+      $("#thebutton").click(function(){
+      	$(".exciting").hide();
       });
 
 
-
+    // all above here
     });
 </script>
 
@@ -36,5 +47,8 @@ put you rfirst name:<input name="first"><br>
 <input type="button" id="thebutton" value="click me">
 </form>
 <div id="justtext">something</div>
+<div class="exciting">something old</div>
+not in a div<br>
+<div class="exciting">something new</div>
 </body>
 </html>
